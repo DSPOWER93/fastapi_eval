@@ -41,7 +41,7 @@ jobs:
         uses: aws-actions/amazon-ecs-render-task-definition@v1
         with:
           task-definition: fastapi_test_task.json 
-          container-name: fastapi_test_ecr
+          container-name: fastapi_eval
           image: ${{ steps.build-image.outputs.image }}    
       - name: Deploy Amazon ECS task definition
         uses: aws-actions/amazon-ecs-deploy-task-definition@v1
