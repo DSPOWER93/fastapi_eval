@@ -4,4 +4,4 @@ app = FastAPI()
 
 @app.get("/")
 async def create_book():
-    return "Hello World: V1"
+    return "Hello World: V2"
